@@ -2,30 +2,45 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Broma</title>
+  <title>¡Ven a mi stream!</title>
   <style>
     body {
-      background-color: #000;
+      background-color: white;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
+      font-family: Arial, sans-serif;
     }
+
     h1 {
       color: red;
       font-size: 4em;
       text-align: center;
+      animation: latido 2s infinite;
     }
+
     a {
       display: block;
       margin-top: 20px;
       font-size: 1.5em;
-      color: white;
+      color: #333;
       text-decoration: none;
+      text-align: center;
     }
+
     a:hover {
-      color: yellow;
+      color: #ff6600;
+    }
+
+    @keyframes latido {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
     }
   </style>
 </head>
